@@ -27,13 +27,15 @@ export default /*#__PURE__*/defineComponent({
     },
     type() {
       let cssClass = 'others';
-      let drugs = [
-        'local-anaesthetic',
-        'induction-agent',
-        'hypnotic'
-      ];
-      if (drugs.includes(this.$attrs.type.toLowerCase())) {
-        cssClass = this.$attrs.type.toLowerCase();
+      if (this.$attrs.type !== undefined) {
+        let drugs = [
+          'local-anaesthetic',
+          'induction-agent',
+          'hypnotic'
+        ];
+        if (drugs.includes(this.$attrs.type.toLowerCase())) {
+          cssClass = this.$attrs.type.toLowerCase();
+        }
       }
       if (this.$attrs.bordered !== undefined) {
         cssClass += ' bordered';

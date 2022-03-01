@@ -15,7 +15,6 @@ export default defineComponent({
     <div style="width: 500px;">
       <drug-label
         class="scaled"
-        type="local-anaesthetic"
       />
     </div>
     <div style="width: 300px;">
