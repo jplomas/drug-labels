@@ -38,6 +38,52 @@ export default defineComponent({
         name="propofol"
         units="mcg/ml"
       />
+      <drug-label
+        type="local-anaesthetic"
+        name="lignocaine"
+        units="mg/ml"
+      />
+      <drug-label
+        type="antiemetic"
+        name="cyclizine"
+        units="mg/ml"
+      />
+      <drug-label
+        type="neuromuscular-blocker"
+        name="atracurium"
+        units="mg/ml"
+      />
+      <drug-label
+        type="neuromuscular-blocker-antagonist"
+        name="Neostigmine/Glycopyrrolate"
+        units="mg/ml"
+      />
+      <drug-label
+        type="depolarizing-neuromuscular-blocker"
+        name="suxamethonium"
+        units="mg/ml"
+      />
+      <drug-label
+        type="opioid"
+        name="fentanyl"
+        units="mg/ml"
+      />
+      <drug-label
+        type="opioid-antagonist"
+        name="naloxone"
+        units="mg/ml"
+        bordered
+      />
+      <!--
+          'local-anaesthetic',
+          'induction-agent',
+          'hypnotic',
+          'hypnotic-antagonist',
+          'antiemetic',
+          'neuromuscular-blocker-antagonist',
+          'neuromuscular-blocker',
+          'depolarizing-neuromuscular-blocker'
+        -->
     </div>
   </div>
 </template>

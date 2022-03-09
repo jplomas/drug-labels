@@ -31,7 +31,14 @@ export default /*#__PURE__*/defineComponent({
         let drugs = [
           'local-anaesthetic',
           'induction-agent',
-          'hypnotic'
+          'hypnotic',
+          'hypnotic-antagonist',
+          'antiemetic',
+          'neuromuscular-blocker-antagonist',
+          'neuromuscular-blocker',
+          'depolarizing-neuromuscular-blocker',
+          'opioid',
+          'opioid-antagonist',
         ];
         if (drugs.includes(this.$attrs.type.toLowerCase())) {
           cssClass = this.$attrs.type.toLowerCase();
@@ -51,8 +58,9 @@ export default /*#__PURE__*/defineComponent({
     class="drug-label"
     :class="type"
   >
-    <p><strong>{{ name }}</strong></p>
-    <p>{{ concentration }} {{ units }}</p>
+    <p class="top"><strong>{{ name }}</strong></p>
+    <p class="bottom
+    ">{{ concentration }} {{ units }}</p>
   </div>
 </template>
 
@@ -60,20 +68,26 @@ export default /*#__PURE__*/defineComponent({
 .drug-label {
     box-sizing: border-box;  
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.4rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
     border-radius: 1rem;
 }
-
+.drug-label .top {
+    padding-top: 0.1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.1rem;
+}
+.drug-label .bottom {
+  margin-bottom: 0.1rem;
+  padding-bottom: 0.6rem;
+  margin-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
 .scaled {
     width: 16rem;
-}
-
-.drug-label p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .local-anaesthetic {
@@ -86,6 +100,58 @@ export default /*#__PURE__*/defineComponent({
 
 .hypnotic {
     background-color: #FF8200;
+}
+.hypnotic-antagonist {
+    background: repeating-linear-gradient(
+      -45deg,
+      #ff7477,
+      #ff7477 7px,
+      #ffffff 7px,
+      #ffffff 20px
+    );
+}
+.neuromuscular-blocker {
+    background-color: #ff7477;
+}
+.neuromuscular-blocker-antagonist {
+    background: repeating-linear-gradient(
+      -45deg,
+      #ff7477,
+      #ff7477 0.5rem,
+      #ffffff 0.5rem,
+      #ffffff 1.0rem
+    );
+}
+.depolarizing-neuromuscular-blocker {
+    background-color: #ff7477;
+    background: linear-gradient(
+        #000000 50%,
+        #ff7477 50%
+    );
+    padding-top: 0.1rem;
+}
+.depolarizing-neuromuscular-blocker .top{
+    color: #ff7477;
+    padding-top: 0rem;
+}
+.depolarizing-neuromuscular-blocker .bottom {
+    padding-top: 0.3rem;
+}
+.antiemetic {
+    background-color: #EFBE7D;
+}
+.opioid {
+    background-color: #71C5E8;
+}
+
+.opioid-antagonist {
+    background: repeating-linear-gradient(
+        -45deg,
+        #71C5E8,
+        #71C5E8 0.5rem,
+        #ffffff 0.5rem,
+        #ffffff 1.0rem
+    );
 }
 .others {
     background-color: #ffffff;
