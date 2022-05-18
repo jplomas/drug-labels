@@ -39,6 +39,8 @@ export default /*#__PURE__*/defineComponent({
           'depolarizing-neuromuscular-blocker',
           'opioid',
           'opioid-antagonist',
+          'vasopressor',
+          'anticholinergic',
         ];
         if (drugs.includes(this.$attrs.type.toLowerCase())) {
           cssClass = this.$attrs.type.toLowerCase();
@@ -152,6 +154,12 @@ export default /*#__PURE__*/defineComponent({
         #ffffff 0.5rem,
         #ffffff 1.0rem
     );
+}
+.vasopressor {
+   background-color: #D6BFDD;
+}
+.anticholinergic {
+    background-color: #A4D65E;
 }
 .others {
     background-color: #ffffff;

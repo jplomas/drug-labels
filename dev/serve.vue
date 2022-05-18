@@ -74,6 +74,18 @@ export default defineComponent({
         units="mg/ml"
         bordered
       />
+      <drug-label
+        type="vasopressor"
+        name="metaraminol"
+        units="mg/ml"
+        bordered
+      />
+      <drug-label
+        type="anticholinergic"
+        name="atropine"
+        units="mcg/ml"
+        bordered
+      />
       <!--
           'local-anaesthetic',
           'induction-agent',
