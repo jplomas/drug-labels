@@ -44,6 +44,11 @@ export default defineComponent({
         units="mg/ml"
       />
       <drug-label
+        type="adrenaline"
+        name="Adrenaline 1:1000"
+        units="mcg/ml"
+      />
+      <drug-label
         type="antiemetic"
         name="cyclizine"
         units="mg/ml"
@@ -61,6 +66,11 @@ export default defineComponent({
       <drug-label
         type="depolarizing-neuromuscular-blocker"
         name="suxamethonium"
+        units="mg/ml"
+      />
+      <drug-label
+        type="hypnotic-antagonist"
+        name="flumazanil"
         units="mg/ml"
       />
       <drug-label
