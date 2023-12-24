@@ -67,7 +67,7 @@ export default /*#__PURE__*/defineComponent({
   </div>
 </template>
 
-<style scoped>
+<style>
 .drug-label {
     box-sizing: border-box;  
     width: 100%;
