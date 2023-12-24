@@ -1,6 +1,6 @@
 {
   "name": "drug-labels",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "vue plugin for pretty anaesthetic drug labels",
   "author": "Dr JP Lomas <jp@lomas.doctor>",
   "main": "dist/drug-label.ssr.js",
