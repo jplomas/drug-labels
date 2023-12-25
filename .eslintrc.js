@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['prettier'],
   extends: [
     // add more generic rulesets here, such as:
     // 'eslint:recommended',

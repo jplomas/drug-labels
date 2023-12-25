@@ -1,111 +1,128 @@
 <script>
-import { defineComponent } from 'vue';
-import DrugLabel from '@/drug-label.vue';
+import { defineComponent } from "vue";
+import DrugLabel from "@/drug-label.vue";
 
 export default defineComponent({
-  name: 'ServeDev',
+  name: "ServeDev",
   components: {
-    DrugLabel
-  }
+    DrugLabel,
+  },
 });
 </script>
 
 <template>
   <div id="app">
-    <div style="width: 500px;">
+    <div style="width: 500px">
       <drug-label
-        class="scaled"
+        scaled
+        bordered
       />
     </div>
-    <div style="width: 300px;">
+    <div style="width: 300px">
       <drug-label type="induction-agent" />
     </div>
-    <div style="width: 400px;">
-      <drug-label
-        name="Midazolam"
-        type="hypnotic"
-      />
+    <div style="width: 100%">
       <drug-label
         type="foo"
         bordered
+        scaled
       />
       <drug-label
         type="hypnotic"
         bordered
+        scaled
+      />
+      <drug-label
+        name="Midazolam"
+        type="hypnotic"
+        scaled
       />
       <drug-label
         type="induction-agent"
         name="propofol"
         units="mcg/ml"
+        scaled
       />
       <drug-label
         type="local-anaesthetic"
         name="lignocaine"
         units="mg/ml"
+        scaled
       />
       <drug-label
         type="adrenaline"
         name="Adrenaline 1:1000"
         units="mcg/ml"
+        scaled
       />
       <drug-label
         type="antiemetic"
         name="cyclizine"
         units="mg/ml"
+        scaled
+      />
+      <drug-label
+        type="hypotensive"
+        name="labetalol"
+        units="mg/ml"
+        scaled
       />
       <drug-label
         type="neuromuscular-blocker"
         name="atracurium"
         units="mg/ml"
+        scaled
       />
       <drug-label
         type="neuromuscular-blocker-antagonist"
         name="Neostigmine/Glycopyrrolate"
         units="mg/ml"
+        scaled
       />
       <drug-label
         type="depolarizing-neuromuscular-blocker"
         name="suxamethonium"
         units="mg/ml"
+        scaled
       />
       <drug-label
         type="hypnotic-antagonist"
         name="flumazanil"
         units="mg/ml"
+        scaled
       />
       <drug-label
         type="opioid"
         name="fentanyl"
         units="mg/ml"
+        scaled
       />
       <drug-label
         type="opioid-antagonist"
         name="naloxone"
         units="mg/ml"
         bordered
+        scaled
       />
       <drug-label
         type="vasopressor"
         name="metaraminol"
         units="mg/ml"
         bordered
+        scaled
       />
       <drug-label
         type="anticholinergic"
         name="atropine"
         units="mcg/ml"
         bordered
+        scaled
       />
-      <!--
-          'local-anaesthetic',
-          'induction-agent',
-          'hypnotic',
-          'hypnotic-antagonist',
-          'antiemetic',
-          'neuromuscular-blocker-antagonist',
-          'neuromuscular-blocker',
-          'depolarizing-neuromuscular-blocker'
-        -->
     </div>
   </div>
 </template>
+<style scoped>
+/* .drug-label {
+  height: 4rem;
+} */
+</style>
