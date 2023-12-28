@@ -58,6 +58,14 @@ Example:
 
 -----
 
+### concentration
+
+_Default: null (displayed as ".............")_
+
+The concentration of the drug to be displayed on the lower portion of the label suffixed with the units.
+
+-----
+
 ### units
 
 _Default: null (displayed as "mg/ml")_

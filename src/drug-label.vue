@@ -54,10 +54,10 @@ export default /*#__PURE__*/defineComponent({
           cssClass = this.$attrs.type.toLowerCase();
         }
       }
-      if (this.$attrs.bordered !== undefined && this.$attrs.bordered !== false) {
+      if (this.$attrs.bordered !== undefined && this.$attrs.bordered !== false && this.$attrs.bordered !== 'false') {
         cssClass += ' bordered';
       }
-      if (this.$attrs.scaled !== undefined && this.$attrs.scaled !== false) {
+      if (this.$attrs.scaled !== undefined && this.$attrs.scaled !== false && this.$attrs.scaled !== 'false') {
         cssClass += ' scaled';
       }
       return cssClass;
