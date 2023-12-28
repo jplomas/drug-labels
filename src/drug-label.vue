@@ -18,6 +18,12 @@ export default /*#__PURE__*/defineComponent({
         return '.......................';
       }
     },
+    size() {
+      if (this.$attrs.size !== undefined) {
+        return ` ${this.$attrs.size}-label`;
+      }
+      return '';
+    },
     units() {
       if (this.$attrs.units !== undefined) {
         return this.$attrs.units;
@@ -63,7 +69,7 @@ export default /*#__PURE__*/defineComponent({
 <template>
   <div
     class="drug-label"
-    :class="type"
+    :class="type + size"
   >
     <p class="top">
       <strong>{{ name }}</strong>
@@ -84,12 +90,36 @@ export default /*#__PURE__*/defineComponent({
   text-align: center;
   border-radius: 1rem;
 }
+
+.small-label {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  border-radius: 0.7rem;
+}
+
+.xsmall-label {
+  font-size: 0.6rem;
+  padding: 0.05rem;
+  border-radius: 0.5rem;
+}
+
 .drug-label .top {
   padding-top: 0.1rem;
   margin-top: 0.4rem;
   margin-bottom: 0.6rem;
   padding-bottom: 0.1rem;
 }
+
+.drug-label.small-label .top {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.drug-label.xsmall-label .top {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
 .drug-label .bottom {
   margin-bottom: 0.1rem;
   padding-bottom: 0.6rem;
@@ -98,6 +128,14 @@ export default /*#__PURE__*/defineComponent({
 }
 .scaled {
   width: 16rem;
+}
+
+.scaled.small-label {
+  width: 10rem;
+}
+
+.scaled.xsmall-label {
+  width: 7rem;
 }
 
 .local-anaesthetic {

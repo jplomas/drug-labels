@@ -12,6 +12,26 @@ export default defineComponent({
 
 <template>
   <div id="app">
+          <drug-label
+          name="Midazolam"
+          type="hypnotic"
+          scaled
+        />
+        <p></p>
+        <drug-label
+          name="Midazolam"
+          type="hypnotic"
+          scaled
+          size="small"
+        />
+        <p></p>
+        <drug-label
+          name="Midazolam"
+          type="hypnotic"
+          scaled
+          size="xsmall"
+        />
+        <p></p>
     <div style="width: 500px">
       <drug-label
         scaled
@@ -26,6 +46,18 @@ export default defineComponent({
         type="foo"
         bordered
         scaled
+        size="small"
+      />
+      <drug-label
+        type="foo"
+        bordered
+        scaled
+        size="xsmall"
+      />
+      <drug-label
+        type="foo"
+        bordered
+        scaled
       />
       <drug-label
         type="hypnotic"
@@ -36,6 +68,18 @@ export default defineComponent({
         name="Midazolam"
         type="hypnotic"
         scaled
+      />
+      <drug-label
+        name="Midazolam"
+        type="hypnotic"
+        scaled
+        size="small"
+      />
+      <drug-label
+        name="Midazolam"
+        type="hypnotic"
+        scaled
+        size="xsmall"
       />
       <drug-label
         type="induction-agent"
@@ -54,6 +98,20 @@ export default defineComponent({
         name="Adrenaline 1:1000"
         units="mcg/ml"
         scaled
+      />
+      <drug-label
+        type="adrenaline"
+        name="Adrenaline 1:1000"
+        units="mcg/ml"
+        scaled
+        size="small"
+      />
+      <drug-label
+        type="adrenaline"
+        name="Adrenaline 1:1000"
+        units="mcg/ml"
+        scaled
+        size="xsmall"
       />
       <drug-label
         type="antiemetic"
@@ -103,6 +161,22 @@ export default defineComponent({
         units="mg/ml"
         bordered
         scaled
+      />
+      <drug-label
+        type="opioid-antagonist"
+        name="naloxone"
+        units="mg/ml"
+        bordered
+        scaled
+        size="small"
+      />
+      <drug-label
+        type="opioid-antagonist"
+        name="naloxone"
+        units="mg/ml"
+        bordered
+        scaled
+        size="xsmall"
       />
       <drug-label
         type="vasopressor"
