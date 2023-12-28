@@ -94,9 +94,7 @@ _Default: null (displayed as false)_
 
 | value | width |
 |------|----|
-| ```true```  | 16 rem (size="normal")
-| | 12 rem (size="small") |
-| |  10 rem (size="xsmall") |
+| ```true```  | 16 rem (size="normal")<br>12 rem (size="small")<br> 10 rem (size="xsmall")
 | ```false``` | as parent element |
 
 Example:

@@ -89,6 +89,7 @@ export default /*#__PURE__*/defineComponent({
   font-size: 1.1rem;
   text-align: center;
   border-radius: 1rem;
+  border: unset;
 }
 
 .small-label {
