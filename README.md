@@ -34,7 +34,7 @@ Determines the type of drug and therefore the color of the label. Possible value
 
 Example:
 
-![Opioid label](examples/type.png)
+<img src="examples/type.png" width="270">
 
 ```html
 <drug-label type="opioid" />
@@ -50,7 +50,7 @@ The name of the drug to be displayed on the top portion of the label.  The initi
 
 Example:
 
-![Ketamine label](examples/name.png)
+<img src="examples/name.png" width="271">
 
 ```html
 <drug-label name="ketamine" />
@@ -107,7 +107,7 @@ _Default: null (displayed as false)_
 
 Example:
 
-![Sizes](examples/size.png)
+<img src="examples/size.png" width="280">
 
 ```html
 <drug-label
