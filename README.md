@@ -36,7 +36,11 @@ Determines the type of drug and therefore the color of the label. Possible value
 
 Example:
 
+<<<<<<< HEAD
 <img src="./examples/type.png" width="270">
+=======
+<img src="examples/type.png" width="270">
+>>>>>>> 18ece159a014e464d688598ec5a4c1f30bc07df8
 
 ```html
 <drug-label type="opioid" />
@@ -52,7 +56,11 @@ The name of the drug to be displayed on the top portion of the label.  The initi
 
 Example:
 
+<<<<<<< HEAD
 <img src="./examples/name.png" width="271">
+=======
+<img src="examples/name.png" width="271">
+>>>>>>> 18ece159a014e464d688598ec5a4c1f30bc07df8
 
 ```html
 <drug-label name="ketamine" />
@@ -109,7 +117,11 @@ _Default: null (displayed as false)_
 
 Example:
 
+<<<<<<< HEAD
 <img src="./examples/size.png" width="280">
+=======
+<img src="examples/size.png" width="280">
+>>>>>>> 18ece159a014e464d688598ec5a4c1f30bc07df8
 
 ```html
 <drug-label
